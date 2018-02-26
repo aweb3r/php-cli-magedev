@@ -49,7 +49,7 @@ class Php5 extends AbstractImage
 
         $this->run('pear upgrade');
         $this->run('pecl upgrade');
-        $this->run('pecl install xdebug');
+        $this->run('pecl install xdebug-2.3.3');
         $this->run('a2enmod rewrite');
 
         $this->run('mkdir /var/www/.composer');
