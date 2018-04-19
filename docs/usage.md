@@ -32,6 +32,40 @@ Mailcatcher is preconfigured and can be accessed in your browser with:
 
     http://localhost:1080
 
+# Solr
+
+Solr is also preconfigured and can accessed in your browser viá:
+	
+	http://localhost:8393/solr
+## Solr config
+
+### Overview of configurable
+
+- Ports
+- Core(s) name(s)
+
+#### Ports
+
+For aditional port, add it in magedev.json like this:
+```
+"ports": {
+      ...
+      "solr": {
+        "42": "8983"
+      },
+      ...
+```
+### Cores
+
+For setup initial cores you are also able to set it up in your magedev.json: 
+```
+    "solr": {
+      "core1": "solr-1",
+      "core2": "solr-2"
+    },
+```
+
+
 # Tasks inside your container
 
 You may need to run some custom commands in the container. You can access the container with:
