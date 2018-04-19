@@ -28,15 +28,17 @@
       "Main",
       "Mysql",
       "Redis",
-      "Varnish"
+      "Varnish",
+      "Solr"
     ],
     "links": {
-      "main": ["mysql", "redis", "elasticsearch"]
+      "main": ["mysql", "redis", "elasticsearch" , "solr"]
     },
     "ports": {
       "main": {
         "80": "80",
-        "35729": "35729"
+        "35729": "35729",
+        "8983": "8983"
       },
       "mysql": {
         "3306": "3306"
