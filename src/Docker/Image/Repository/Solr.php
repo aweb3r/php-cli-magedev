@@ -26,7 +26,7 @@ class Solr extends AbstractImage
         $solrConfig[] = $this->config->get('solr');
 
         $this->from($this->imageFactory->create('Solr'));
-        $this->name('Solr');
+        $this->name('solr');
         $this->from('solr:5.3.1');
         $this->run('apt-get update');
 
